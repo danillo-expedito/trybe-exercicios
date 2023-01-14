@@ -1,0 +1,8 @@
+Internet
+Unix
+Bash
+Trybe
+Shell
+Kernel
+Linux
+Terminal
