@@ -1,1 +1,11 @@
-Danillo Santos
+O versionamento funciona da seguinte maneira: É criado um branch_main que representa
+a 'raiz' do nosso código e o salva como uma 'base', assim que criamos a base
+podemos realizar a criação de outros branchs que seriam outras versões do código 
+presente no branch_main, após a criação de outra branch podemos fazer alterações 
+e criar 'commits' que funcionam como algo que guarda as alterações feitas,
+cada branch modificado não altera o conteúdo da branch_main ao não ser que ocorra
+o comando de 'merge' que mescla tudo que foi alterado em commits e em branchs posteriores
+à branch_main, tornando-a um novo arquivo já com as alterações. É importante informar
+que esse tipo de versionamento serve para que possamos testar novas adições ao código
+sem afetar o funcionamento do código 'base'.
+
