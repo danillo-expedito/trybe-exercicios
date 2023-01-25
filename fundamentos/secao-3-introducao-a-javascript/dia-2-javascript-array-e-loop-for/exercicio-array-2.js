@@ -94,18 +94,19 @@
 
 // exercício 7
 
-let numbers = []
-let divisao = []
+// let numbers = []
+// let divisao = []
 
-for (let index = 1; index <= 25; index += 1) {
-    numbers.push(index);
-}
+// for (let index = 1; index <= 25; index += 1) {
+//     numbers.push(index);
+// }
 
-console.log(numbers);
+// console.log(numbers);
 
-for (let index = 0; index < numbers.length; index += 1) {
-    console.log(numbers[index] / 2)
-}
+// for (let index = 0; index < numbers.length; index += 1) {
+//     console.log(numbers[index] / 2)
+// }
+
 
 
 
