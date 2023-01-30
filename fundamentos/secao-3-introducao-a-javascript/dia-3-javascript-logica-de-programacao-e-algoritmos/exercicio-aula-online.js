@@ -55,12 +55,11 @@ player2 === "papel" && player1 === "pedra") {
 
 let idadeDaPessoa = 22;
 
-if (idadeDaPessoa >= 18) {
-    console.log("A pessoa é maior de idade");
-} else {
-    console.log("A pessoa é menor de idade");
-}
+ const maiorIdade = (idadeDaPessoa >= 18)
+ ? 'A pessoa é maior de idade'
+ : 'A pessoa é menor de idade'
 
+ console.log(maiorIdade)
 
 // 5 
 
