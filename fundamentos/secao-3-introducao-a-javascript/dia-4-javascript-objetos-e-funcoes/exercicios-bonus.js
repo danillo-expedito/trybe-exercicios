@@ -132,5 +132,16 @@ let moradores = {
   };
 
 let residentsBlockTwo = moradores.blocoDois;
+let lastResidentBlockTwo =moradores.blocoDois[moradores.blocoDois.length - 1];
 
-console.log(residentsBlockTwo)
+console.log(`O morador do bloco 2 de nome ${lastResidentBlockTwo.nome}
+${lastResidentBlockTwo.sobrenome} mora no ${lastResidentBlockTwo.andar} ° andar, apartamento ${lastResidentBlockTwo.apartamento}`);
+
+for (let morador = 0; morador < moradores.blocoUm.length; morador += 1) {
+    console.log(`${moradores.blocoUm[morador].nome} ${moradores.blocoUm[morador].sobrenome}`)
+}
+
+for (let moradorBloco2 = 0; moradorBloco2 < moradores.blocoDois.length; moradorBloco2 += 1) {
+    console.log(`${moradores.blocoDois[moradorBloco2].nome} ${moradores.blocoDois[moradorBloco2].sobrenome}`)
+}
+
