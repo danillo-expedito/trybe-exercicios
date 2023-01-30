@@ -48,4 +48,51 @@ console.log(`O resultado da soma de ${a} + ${b} é = ${soma(a,b)}`);
 
 const numeroAleatorio = () => Math.random();
 
-console.log(numeroAleatorio())
+console.log(numeroAleatorio());
+
+
+// exercício 6 - to arrow function
+// function hello(nome) {
+//     return `Olá, ${nome}!`
+//   }
+//   let nome = 'Ivan';
+//   console.log(hello(nome));
+
+const hello = (nome) => `Olá, ${nome}!`;
+let nome = 'Ivan';
+
+console.log(hello(nome));
+
+
+// exercício 7 - to arrow function
+// function nomeCompleto(nome, sobrenome) {
+//     return `${nome} ${sobrenome}`
+//   }
+//   let nome = 'Ivan';
+//   let sobrenome = 'Pires';
+//   console.log(nomeCompleto(nome, sobrenome));
+
+const nomeCompleto = (nome, sobrenome) => `${nome} ${sobrenome}`;
+let nome1 = 'Ivan';
+let sobrenome1 = 'Pires';
+
+console.log(nomeCompleto(nome1, sobrenome1));
+
+
+// exercício 8 - to ternary operator
+// let speed = 90;
+// const speedCar = (speed) => {
+//   if (speed >= 120) {
+//     return `Você ultrapassou o limite de velocidade`;
+//   } else {
+//     return `Você está na velocidade permitida`;
+//   }
+// };
+// console.log(speedCar(speed));
+
+let speed = 90;
+
+const speedCar = (speed) => speed >= 120 
+? 'Você ultrapassou o limite de velocidade' : 'Você está na velocidade permitida'
+
+console.log(speedCar(speed));
