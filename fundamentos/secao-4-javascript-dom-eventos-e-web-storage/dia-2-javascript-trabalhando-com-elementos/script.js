@@ -42,5 +42,4 @@ firstChild.appendChild(newborn);
 
 // A partir desse filho criado, acesse terceiroFilho.
 const artigo = document.getElementsByTagName('article');
-
 artigo[0].parentNode.parentNode.nextElementSibling;
