@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="landing-page-style.css">
+    <title>Exercício</title>
+  </head>
+  <body>
+    <script>
+      const body = document.getElementsByTagName('body')
+      const firstTitle = document.createElement('h1');
+      firstTitle.innerText = 'TrybeTrip - Agência de Viagens'
+      body[0].appendChild(firstTitle);
+
+      const mainContent = document.createElement('main');
+      mainContent.className = 'main-content';
+      body[0].appendChild(mainContent);
+
+      const firstSection = document.createElement('section');
+      firstSection.className = 'center-content';
+      mainContent.appendChild(firstSection);
+
+      const paragraph = document.createElement('p');
+      paragraph.innerText = 'Site de viagem com desconto estudantil'
+      firstSection.appendChild(paragraph);
+
+      const leftSide = document.createElement('section');
+      leftSide.className = 'left-content';
+
+      const rightSide = document.createElement('section');
+      rightSide.className = 'right-content';
+
+      mainContent.appendChild(leftSide);
+      mainContent.appendChild(rightSide);
+
+      const image = document.createElement('img');
+      image.src = 'https://picsum.photos/200';
+      image.className = 'small-image';
+      leftSide.appendChild(image);
+
+      const listU = document.createElement('ul');
+      rightSide.appendChild(listU);
+
+      // criação da lista utilizando arrow functions e for/of
+      const createList = (text) => {
+        const listLi = document.createElement('li')
+        listLi.innerText = text;
+        return listLi;
+      }
+      
+      const numbers = ['um', 'dois', 'tres', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+      for (let number of numbers) {
+        const newItemList = createList(`${number}`)
+        listU.appendChild(newItemList);
+      }
+      // --------------------------------------------------------
+    
+      // criação automática de tags, exemplo a seguir utilizando h3
+      const createSubtitle = (parameter) => {
+        const newSub = document.createElement(parameter)
+        return newSub
+      }
+
+      for (let index = 0; index < 3; index += 1) {
+        const subtitles = createSubtitle('h3')
+        mainContent.appendChild(subtitles);
+      }
+     // ----------------------------------------------------------
+    
+
+     // adicionar classe a + de um elemento usando for tradicional
+     document.getElementsByTagName('h1')[0].className = 'title';
+
+     const collectionH3 = document.getElementsByTagName('h3');
+     for (let j = 0; j < collectionH3.length; j += 1) {
+        collectionH3[j].className = 'description'
+     }
+    // ----------------------------------------------------------
+ 
+     mainContent.removeChild(leftSide);
+    
+     rightSide.style.marginRight = 'auto';
+
+     firstSection.parentNode.style.backgroundColor = 'green';
+
+     document.getElementsByTagName('li')[9].remove();
+     document.getElementsByTagName('li')[8].remove();
+    </script>
+  </body>
+</html>
