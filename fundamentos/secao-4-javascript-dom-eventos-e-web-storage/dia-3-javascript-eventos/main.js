@@ -13,7 +13,7 @@ const myWebpage = document.getElementById('my-spotrybefy');
 const listLi = document.querySelectorAll('li');
 for (let liItem of listLi) {
   liItem.addEventListener('click', (event) => {
-    const selected = document.querySelector('.tech');
+  const selected = document.querySelector('.tech')   
     if(selected !== null) {
       selected.classList.remove('tech');
     }
@@ -23,19 +23,25 @@ for (let liItem of listLi) {
 
 // - Crie uma função que, ao digitar na caixa de texto, altere o texto do elemento
 // com a classe 'tech';
-const selected = document.querySelector('.tech');
-selected.addEventListener('input', (event) => {
-  event.target.innerText = 
-});
-
 
 
 // - Crie uma função que, ao clicar duas vezes em 'Meu top 3 do Spotrybefy', ele
 // redirecione para alguma página;
 //  - Que tal redirecionar para seu portfólio?
 
+myWebpage.addEventListener('dblclick', () => {
+  window.open('https://github.com/danillo-expedito/trybe-exercicios');
+})
+
+
 // - Crie uma função que, ao passar o mouse sobre 'Meu top 3 do Spotrybefy', altere
 // a cor do mesmo;
+
+const changeColor = (event) => event.target.style.color = 'green';
+const resetColor = (event) => event.target.style.color = 'white';
+
+myWebpage.addEventListener('mouseover', changeColor);
+myWebpage.addEventListener('mouseout', resetColor);
 
 // Segue abaixo um exemplo do uso de event.target:
 
