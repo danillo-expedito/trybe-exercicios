@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Form</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="dist/css/DatePickerX.min.css">
+</head>
+<body>
+  <header>
+    <h1 id="title">Formulário Trybe Travel</h1>
+  </header>
+  <form class="main-form row gy-2 gx-3 align-items-center">
+    <fieldset class="">
+      <legend>Informações</legend>
+    <div class="col-auto">
+        <label for="fullName" class="form-label" >Nome completo:</label>
+        <input type="text" class="form-control" name="full-name" id="fullName" minlength="10" maxlength="40" required>
+    </div>
+    <div class="col-auto">
+    <br>
+    <label for="email" class="form-label">E-mail:</label>
+      <input type="email" class="form-control" name="email-user" id="email" minlength="10" maxlength="50" placeholder="name@example" required>
+   </div>
+    </fieldset>
+    <br>
+    <fieldset>
+    <label for="" class="form-check-label">Destino Preferido:
+      <input type="radio" class="form-check-input" name="destinations" id="city">Cidade
+      <input type="radio" class="form-check-input" name="destinations" id="countryside">Campo
+      <input type="radio" class="form-check-input" name="destinations" id="beach">Praia
+      <input type="radio" class="form-check-input" name="destinations" id="mountain">Montanha
+    </label>
+    </fieldset>
+    <br>
+    <label for="question">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?
+    <textarea name="text-area" class="form-control" id="question" cols="40" rows="20" maxlength="500" required></textarea>
+    </label>
+    <br>
+    <label for="date">Qual a melhor data para realizar sua viagem?
+      <br>
+      <input type="date" name="date-to-travel" id="date">
+    </label>
+    <br>
+    <fieldset>
+      <legend>Termos</legend>
+    <div class="col-auto">
+      <div>
+        <label for="promo" class="form-check-label">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?
+          <input type="checkbox" class="form-check-input" name="check-promo" id="promo">
+        </label>
+      </div>
+    </div>
+    <br>
+    <div class="col-auto">
+      <div>
+        <label for="agreement" class="form-check-label">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.
+          <input type="checkbox" class="form-check-input" name="agreement" id="agreement" required>
+        </label>
+      </div>
+    </div>
+
+   </fieldset>
+   <br>
+   <button type="submit" class="btn btn-primary" id="submit-btn" name="submit">Enviar</button> 
+   <button type="reset" class="btn btn-secondary" id="clear-btn">Limpar</button>
+  </form>
+  <script src="dist/js/DatePickerX.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
