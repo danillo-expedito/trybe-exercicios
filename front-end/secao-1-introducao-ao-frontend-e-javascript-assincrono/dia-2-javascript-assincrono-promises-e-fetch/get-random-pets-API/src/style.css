@@ -36,7 +36,8 @@ h1 {
   border-right: 1px solid #730071;
   font-size: 14px;
   font-weight: 700;
-  color: #390040; 
+  color: #390040;
+  cursor: pointer;
 }
 
 #image-section {
