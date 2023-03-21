@@ -1,0 +1,40 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #B5B8A3;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 700;
+}
+
+#card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  height: 50vh;
+  border-radius: 8px;
+}
+
+p {
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+#button {
+  padding: 7px 28px;
+  background-color: #315C2B;
+  border: 1px solid #274029;
+  color: white;
+  font-size: 18px;
+}
